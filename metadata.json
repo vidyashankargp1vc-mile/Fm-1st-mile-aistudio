@@ -1,0 +1,7 @@
+{
+  "name": "Flipkart First Mile - Operations Operating Shelf",
+  "description": "Flipkart First Mile operations shelf: spreadsheets, dashboards, codes, and link center for Operations HQ.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

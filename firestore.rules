@@ -1,0 +1,20 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Allow read/write access to operations resources
+    match /ops_resources/{resourceId} {
+      allow read, write: if true;
+    }
+    
+    // Activity log stream
+    match /ops_activity/{activityId} {
+      allow read, write: if true;
+    }
+
+    // Health check and metadata
+    match /ops_system_meta/{metaId} {
+      allow read, write: if true;
+    }
+  }
+}
